@@ -1,17 +1,13 @@
 <?php
 // Configuración de la conexión a la base de datos
-$servername = "localhost";
-$username = "id21315121_arielct";
-$password = "codeFullPhp#23";
-$dbname = "id21315121_integrador_php";
+// $servername = "localhost";
+// $username = "id21315121_arielct";
+// $password = "codeFullPhp#23";
+// $dbname = "id21315121_integrador_php";
+include 'db_config.php';
+?>
 
-// Crear la conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+<?php
 
 // Obtener datos del formulario
 $nombre = $_POST['nombre'];

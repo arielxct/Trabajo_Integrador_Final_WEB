@@ -52,7 +52,8 @@
         color:chartreuse;
      }
      .menu{
-      width: 40px;
+      width: 50%;
+      border-radius: 50%;
      }
      
    /* body */
@@ -384,9 +385,6 @@ background-color: #1d3947;
     .parrafo_tarjeta{
       font-size: small;
     }
-  }
-  .menu{
-    background-color: red;
   }
   @media(max-width:768px){
     .nav{

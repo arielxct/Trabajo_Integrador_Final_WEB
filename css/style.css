@@ -62,7 +62,7 @@
 
     /* background-image: url('/Integrador/image/ba11260x697gris.png'); */
 
-     background-image: url("../image/ba11290x780barro.png");
+     /* background-image: url("../image/ba11290x780barro.png"); */
 
         background-color: white;
        padding: 0px;
@@ -397,7 +397,8 @@ background-color: #1d3947;
       display: block;
     }
     .menu{
-      width: 100%;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
     }
     .conf_bs_as{
@@ -438,4 +439,20 @@ background-color: #1d3947;
   .btn-light{
     font-size: 15px;
   }
+}
+
+
+
+.carousel-inner {
+  position: relative;
+}
+
+.contenido_fijo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white; /* Ajusta el color del texto según tu necesidad */
 }

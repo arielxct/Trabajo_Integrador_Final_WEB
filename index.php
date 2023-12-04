@@ -16,7 +16,7 @@
 
 <header class="header">
     <div class="menu_grande">
-        <div class="container text-center">
+        <div class="text-center">
             <div class="row">
                 <div class="col-2 columna1">
                     <img src="image/codoacodo.png" alt="Codo a Codo" class="logo">
@@ -39,7 +39,7 @@
     <!-- ================================================================ -->
 
     <body>
-        <div class="container text-center">
+        <div class="text-center">
             <main>
                 <!-- SECCION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
                 <section class="imagen_grande">
@@ -324,8 +324,8 @@
 
 
 
-//// ESTE ERA EL CODIGO QUE ARIEL SE DEJO COMENTADO PARA TENER A futuro
-section class="imagen_grande">
+<!-- ESTE ERA EL CODIGO QUE ARIEL SE DEJO COMENTADO PARA TENER A futuro ///
+<!--section class="imagen_grande">
 <!-- <div class="row">
                         <div class="col-12 columna_imagen_grande">
 

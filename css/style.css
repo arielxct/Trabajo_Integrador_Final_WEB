@@ -1,447 +1,75 @@
-
 /* @media screen and (max-width: 600px) {
     
     } */
 
-.logo{
-   width: 125px;
-   flex-direction: row;
-   justify-content: flex-start;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.row{
-    
-    border: 3px brown;
-    padding: 0px;
-    margin: 3px;
-   
-
-   }
-   /* header */
-   .columna1{
-    background-color: #353a40;
-    color: antiquewhite;
-    /* font-size: 50px; */
-    
-   }
-   .columna3{
-    background-color: #353a40;
-    color: antiquewhite;
-    /* font-size: 50px; */
-    display: flex;
-    align-items: center;
-    
-   }
-
-   .columna2{
-   
-    background-color:  #353a40;
-    color: antiquewhite;
-    font-size: 15px;
-    align-items: center;
-    
-    display: flex;
-    justify-content: end;
-
-   }
-   .nav-link{
-    color: white;
-    
-     }
-     .tickets{
-        color:chartreuse;
-     }
-     .menu{
-      width: 50%;
-     }
-     
-   /* body */
-   /* imagen grande */
-   .columna_imagen_grande{
-    /* background-image: url('/Integrador/image/ba11260x697.png'); */
-
-    /* background-image: url('/Integrador/image/ba11260x697gris.png'); */
-
-     /* background-image: url("../image/ba11290x780barro.png"); */
-
-        background-color: white;
-       padding: 0px;
-        height: 735px; 
-         
-   }
-   .fila1{
-    height: 210px;
-    }
-    .fila2a{
-        height: 250px; 
-        /* background-color: blueviolet; */
-    }
-    .fila2b{
-        height: 250px; 
-        /* background-color: rgb(43, 226, 58); */
-    }
-    .fila2c{
-        height: 250px; 
-        /* background-color: rgb(219, 110, 37); */
-    }
-    .titulo_tarjeta{
-        font-size: 25px;
-       
-        display: flex;
-        justify-content: right;
-              
-       
-    }
-    .botones_tarjeta{
-        display: flex;
-        justify-content: right;
-
-    }
-    .titulo_tarjeta{
-        color: white;
-    }
-    .parrafo_tarjeta{
-        color: white;
-        text-align:right;
-    }
-    .btn-outline-secondary{
-        color: white;
-        border-color: white;
-    }
-
-
-  
-   
-   /* tres imagenes */
-   .titulo_pequeño{
-    background-color: white;
-    
-    font-size: 10px;
-    
-   }
-   
-
-   .tres_imagenes{
-    background-color: white;
-    
-   
-      }
-
-    .alineo_tres_imagenes{
-        display: flex;
-        justify-content: center;
-       
-    }
-   .tres_fotos{
-   
-    width: 80%;
-   }
-
-   .card-group{
-    padding-left: 20px;
-    padding-left: 20px;
-    
-   }
-
-   .card{
-    padding: 20px;
-   
-   }
-
-   
-   .alineo_botes_y_texto{
-    display: block;
-    justify-content: left;
-    text-align: initial; 
-    
-   }
-
-   .cuadro_precios1{
-    background-color: white;
-    border-color: blue;
-    border-style: solid;
-    text-align: center;
-   }
-   .cuadro_precios2{
-    background-color: white;
-    border-color: cornflowerblue;
-    border-style: solid;
-    text-align: center;
-   }
-   .cuadro_precios3{
-    background-color: white;
-    border-color: orange;
-    border-style: solid;
-    text-align: center;
-   }
-
-   .btn-warning  {
-    font-size: 10px;
-    padding: 3px 6px;
-   }
-   .btn-info{
-    font-size: 10px;
-    padding: 3px 6px;
-   }
-   .btn-secondary {
-    font-size: 10px;
-    padding: 3px 6px;
-   }
-   .btn-danger{
-    font-size: 10px;
-    padding: 3px 6px;
-   }
-
-   .card-text{
-    font-size: 12px;
-   }
-   .card-porcentaje{
-    font-size: 17px;
-    font-weight: bold;
-    
-   }
-
-   /* imagen y texto */
-   .imagen_y_texto{
-    background-color: white;
-    width: 100%;
-   }
-
-   .mb-3{
-    padding: 0px;
-    margin: 0px;
-    
-   
-   }
-    
-   .color_total_pagar{
-    display: none;
-   } 
-
-   .a_total_pagar{
-    background-color: rgb(204, 229, 255);
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-   }
-
-  
-   .g-0{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-   }
-    .ajusto_imagen_texto{
-        padding: 0px;
-        border: 0px; 
-
-    }
-   
-   .col-md-6{
-    
-    background-color:#353a40;
-    color: white; 
-   }
-
-   .texto_octubre{
-    background-color: white;
-    padding: 0px;
-   }
-   .alineo_texto_octubre{
-        text-align: left;
-        
-   }
-.btn-lightmio{
-    border-color: white;
-    background-color:#353a40; 
-    color: white;  
-}
-   
-
-   /* titulos y formulario */
-.titulos_y_formulario{
-    
-    background-color: white;
-}
-.titulo_pequeño_formulario{
-    font-size: 10px;
-}
-.titulo_peq_form{
-    font-size: 11px;
+.logo {
+  width: 125px;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
- 
-  
-  .col-75 {
-    float: left;
-    width: 100%;
-    margin-top: 6px;
-    background-color: white;
-    }
-    .col-75-email {
-      float: left;
-    width: 100%;
-    margin-top: 6px;
-    background-color: rgb(128, 10, 10);
-
-
-    }
-  .izquierdoForm{
-    background-color: white;
-    }
-  .derechoForm{
-    background-color: white;
-    
-  }
-  .form-nombre{
-    background-color: white;
-     width: 100%;
-    
-  }
-  .form-apellido{
-    background-color: white;
-    width: 100%;
-  }
-.form-cantidad{
-  text-align: left;
-}
-.form-categoria{
-  text-align: left;
+.row {
+  border: 3px brown;
+  padding: 0px;
+  margin: 3px;
 }
 
-.form-label{
-  background-color: rgb(204, 229, 255);
-}
-  .pequeño_mensaje{
-    /* font-size: 10px; */
-    color: grey;
-    text-align: left;
-  }
-  
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 3px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color:   #96c93e;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /* float:inline-start; */
-    width: 100%;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  input[type=button] {
-    background-color:   #96c93e;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /* float:inline-start; */
-    width: 100%;
-  }
-
-  input[type=button]:hover {
-    background-color: #45a049;
-  }
-  /* footer */
-.btn-light{
-  background-color: #1d3947;
-  border-radius: 0;
-  border: none;
-  color: white;
-  font-size: 10px;
-  width: 100%;
-}
-.botones_footer{
-background-color: #1d3947;
+/* header */
+.columna1 {
+  background-color: #353a40;
+  color: antiquewhite;
+  /* font-size: 50px; */
 }
 
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  /* @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px)  */
-  /* @media screen and (max-width: 600px ) */
-  /* @media screen and (min-width: 601px ){
-
-    .menu_chico{
-      display: none;
-    } 
-  }*/
-   @media(max-width: 600px ) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-    .parrafo_tarjeta{
-      font-size: small;
-    }
-  }
-  @media(max-width:768px){
-    .nav{
-        display: none;
-        width: 150px;
-        position: absolute;
-        top: 10%;
-        background-color: #353a40;
-    }
-    .columna2:hover > .nav{
-      display: block;
-    }
-    .menu{
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
-    .conf_bs_as{
-      display: flex;
-      justify-content: center;
-      width: 55%;
-    }
-    .columna1{
-      width: 30%;
-      display: flex;
-      justify-content: center;
-    }
-    .columna2{
-      width: 15%;
-    }
-    .logo{
-      width: 100%;
-    }
-    .botones_footer{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .btn-light{
-      display: flex;
-      justify-content: flex-start;
-    }
-}
-@media(min-width:768px){
-  .menu{
-    display: none;
-  }
-}
-.botones_footer{
+.columna3 {
+  background-color: #353a40;
+  color: antiquewhite;
+  /* font-size: 50px; */
   display: flex;
-}
-@media(min-width:1200px){
-  .btn-light{
-    font-size: 15px;
-  }
+  align-items: center;
 }
 
+.columna2 {
+  background-color: #353a40;
+  color: antiquewhite;
+  font-size: 15px;
+  align-items: center;
 
+  display: flex;
+  justify-content: end;
+}
+
+.nav-link {
+  color: white;
+}
+
+.tickets {
+  color: chartreuse;
+}
+
+.menu {
+  width: 50%;
+}
+
+/* body */
+/* imagen grande */
+.columna_imagen_grande {
+  /* background-image: url('/Integrador/image/ba11260x697.png'); */
+
+  /* background-image: url('/Integrador/image/ba11260x697gris.png'); */
+
+  /* background-image: url("../image/ba11290x780barro.png"); */
+
+  background-color: white;
+  padding: 0px;
+  height: 735px;
+}
 
 .carousel-inner {
   position: relative;
@@ -454,5 +82,398 @@ background-color: #1d3947;
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  color: white; /* Ajusta el color del texto según tu necesidad */
+  color: white;
+}
+
+.fila1 {
+  height: 210px;
+}
+
+.fila2a {
+  height: 250px;
+  /* background-color: blueviolet; */
+}
+
+.fila2b {
+  height: 250px;
+  /* background-color: rgb(43, 226, 58); */
+}
+
+.fila2c {
+  height: 250px;
+  /* background-color: rgb(219, 110, 37); */
+}
+
+.titulo_tarjeta {
+  font-size: 25px;
+
+  display: flex;
+  justify-content: right;
+}
+
+.botones_tarjeta {
+  display: flex;
+  justify-content: right;
+}
+
+.titulo_tarjeta {
+  color: white;
+}
+
+.parrafo_tarjeta {
+  color: white;
+  text-align: right;
+}
+
+.btn-outline-secondary {
+  color: white;
+  border-color: white;
+}
+
+/* tres imagenes */
+.titulo_pequeño {
+  background-color: white;
+
+  font-size: 10px;
+}
+
+.tres_imagenes {
+  background-color: white;
+}
+
+.alineo_tres_imagenes {
+  display: flex;
+  justify-content: center;
+}
+
+.tres_fotos {
+  width: 80%;
+}
+
+.card-group {
+  padding-left: 20px;
+  padding-left: 20px;
+}
+
+.card {
+  padding: 20px;
+}
+
+.alineo_botes_y_texto {
+  display: block;
+  justify-content: left;
+  text-align: initial;
+}
+
+.cuadro_precios1 {
+  background-color: white;
+  border-color: blue;
+  border-style: solid;
+  text-align: center;
+}
+
+.cuadro_precios2 {
+  background-color: white;
+  border-color: cornflowerblue;
+  border-style: solid;
+  text-align: center;
+}
+
+.cuadro_precios3 {
+  background-color: white;
+  border-color: orange;
+  border-style: solid;
+  text-align: center;
+}
+
+.btn-warning {
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+.btn-info {
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+.btn-secondary {
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+.btn-danger {
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+.card-porcentaje {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* imagen y texto */
+.imagen_y_texto {
+  background-color: white;
+  width: 100%;
+}
+
+.mb-3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.color_total_pagar {
+  display: none;
+}
+
+.a_total_pagar {
+  background-color: rgb(204, 229, 255);
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.g-0 {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.ajusto_imagen_texto {
+  padding: 0px;
+  border: 0px;
+}
+
+.col-md-6 {
+  background-color: #353a40;
+  color: white;
+}
+
+.texto_octubre {
+  background-color: white;
+  padding: 0px;
+}
+
+.alineo_texto_octubre {
+  text-align: left;
+}
+
+.btn-lightmio {
+  border-color: white;
+  background-color: #353a40;
+  color: white;
+}
+
+/* titulos y formulario */
+.titulos_y_formulario {
+  background-color: white;
+}
+
+.titulo_pequeño_formulario {
+  font-size: 10px;
+}
+
+.titulo_peq_form {
+  font-size: 11px;
+}
+
+.col-75 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  background-color: white;
+}
+
+.col-75-email {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  background-color: rgb(128, 10, 10);
+}
+
+.izquierdoForm {
+  background-color: white;
+}
+
+.derechoForm {
+  background-color: white;
+}
+
+.form-nombre {
+  background-color: white;
+  width: 100%;
+}
+
+.form-apellido {
+  background-color: white;
+  width: 100%;
+}
+
+.form-cantidad {
+  text-align: left;
+}
+
+.form-categoria {
+  text-align: left;
+}
+
+.form-label {
+  background-color: rgb(204, 229, 255);
+}
+
+.pequeño_mensaje {
+  /* font-size: 10px; */
+  color: grey;
+  text-align: left;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #96c93e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float:inline-start; */
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="button"] {
+  background-color: #96c93e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float:inline-start; */
+  width: 100%;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* footer */
+.btn-light {
+  background-color: #1d3947;
+  border-radius: 0;
+  border: none;
+  color: white;
+  font-size: 10px;
+  width: 100%;
+}
+
+.botones_footer {
+  background-color: #1d3947;
+}
+
+.menu_grande {
+  width: 100%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px)  */
+/* @media screen and (max-width: 600px ) */
+/* @media screen and (min-width: 601px ){
+
+    .menu_chico{
+      display: none;
+    } 
+  }*/
+@media (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .parrafo_tarjeta {
+    font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    background-color: #353a40;
+  }
+
+  .columna2:hover > .nav {
+    display: block;
+  }
+
+  .menu {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .conf_bs_as {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+  }
+
+  .columna1 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .columna2 {
+    width: 15%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .botones_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-light {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.botones_footer {
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .btn-light {
+    font-size: 15px;
+  }
 }

@@ -1,23 +1,10 @@
 <!--  INSERTO CONEXION PHP A SERVIDOR WEBHOST -->
 <?php
 
+include 'db_config.php';
+?>
 
-// Configuración de la conexión a la base de datos de WEBHOST
-$servername = "localhost";
-$username = "id21315121_arielct";
-$password = "codeFullPhp#23";
-$dbname = "id21315121_integrador_php";
-
-
-
-// Crear la conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Verificar la conexión
-
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+<?php
 
 // Consulta para obtener todos los registros de la tabla 
 $sql = "SELECT * FROM oradores";
@@ -67,18 +54,12 @@ $result = $conn->query($sql);
 
     </div>
 
-
 </header>
 
 <body>
     <div class="container text-center">
-
-
         <main>
-
-
             <!-- MMMMMMMM   INSERTO CODIGO HTML PARA VER LA TABLA   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
-
             <h2>Registros de la Tabla</h2>
             <table border="1">
                 <tr>
@@ -110,8 +91,6 @@ $result = $conn->query($sql);
                 ?>
 
             </table>
-
-
         </main>
     </div>
 </body>

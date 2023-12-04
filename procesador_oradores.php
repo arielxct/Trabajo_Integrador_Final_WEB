@@ -1,9 +1,5 @@
 <?php
-// Configuración de la conexión a la base de datos
-// $servername = "localhost";
-// $username = "id21315121_arielct";
-// $password = "codeFullPhp#23";
-// $dbname = "id21315121_integrador_php";
+
 include 'db_config.php';
 ?>
 

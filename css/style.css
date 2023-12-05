@@ -503,12 +503,12 @@ input[type="button"]:hover {
   }
 
   .foo {
-    flex-direction: column; /* Cambia a diseño de columna en dispositivos pequeños */
-    align-items: center; /* Centra los elementos en el eje horizontal */
+    flex-direction: column;
+    align-items: center; 
   }
 
   .footer a {
-    margin-bottom: 10px; /* Añade espacio entre las etiquetas <a> */
+    margin-bottom: 10px;
   }
 }
 

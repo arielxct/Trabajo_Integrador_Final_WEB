@@ -18,22 +18,22 @@
     <!-- <div class="menu_grande">
         <div class="text-center">
             <div class="row"> -->
-                <!-- <div class="col-2 columna1">
+    <!-- <div class="col-2 columna1">
                     <img src="image/codoacodo.png" alt="Codo a Codo" class="logo">
                 </div>
                 <div class="col-1 columna3 conf_bs_as">
                     <a>Conf Bs As</a>
                 </div> -->
 
-                <!-- Incluimos el nav-bar -->
-                <!-- <div class="col-9 columna2"> -->
-                    <?php
-                    include 'nav-bar.html';
-                    ?>
-                <!-- </div> -->
-            <!-- </div> -->
+    <!-- Incluimos el nav-bar -->
+    <!-- <div class="col-9 columna2"> -->
+    <?php
+    include 'nav-bar.html';
+    ?>
+    <!-- </div> -->
+    <!-- </div> -->
 
-        <!-- </div> -->
+    <!-- </div> -->
     <!-- </div> -->
 </header>
 <!-- ================================================================ -->
@@ -140,22 +140,12 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </section>
             <!-- SECCION imagen y texto XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
             <section class="imagen_y_texto">
-
                 <!-- <div class="imagen_texto"> -->
-
                 <div class="row ajusto_imagen_texto">
-
-
-
                     <div class="col-12 texto_octubre">
-
                         <!-- imagen y texto -->
                         <div class="card mb-3">
                             <div class="row g-0">
@@ -168,9 +158,7 @@
                                             <h5 class="card-title">Bs As - Octubre</h5>
                                         </section>
                                         <p class="card-text">Buenos Aires es la provincia y localidad mas grane del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de la superficie).</p>
-
                                         <button type="button" class="btn btn-lightmio ">Conocé más</button>
-
                                     </div>
                                 </div>
                             </div>
@@ -178,14 +166,11 @@
                         <!--  fin imagen y texto -->
                     </div>
                 </div>
-
                 <!-- </div> -->
             </section>
 
-
             <!-- SECCION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
             <section class="titulos_y_formulario">
-
                 <div class="titulo_pequeño_formulario">
                     <div class="row">
                         <div class="col-12">
@@ -198,45 +183,32 @@
                     </div>
 
                 </div>
-
-
                 <!-- FORMULARIO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
-
-
                 <!-- <div class="container"> -->
                 <!-- <form action="procesador_oradores.php" method="post"> -->
                 <form action="procesador_oradores.php" method="post">
                     <!-- primer row mmmmmmmmmmmmmmmmmmm-->
                     <div class="row">
                         <div class="col-3 izquierdoForm">
-
                         </div>
                         <div class="col-3">
-
                             <div class="col-75 form-nombre">
                                 <input type="text" id="fname" name="nombre" required placeholder="Nombre">
                             </div>
                         </div>
 
                         <div class="col-3">
-
                             <div class="col-75 form-apellido">
                                 <input type="text" id="lname" name="apellido" required placeholder="Apellido">
                             </div>
                         </div>
-                        <div class="col-3 derechoForm">
-
-                        </div>
+                        <div class="col-3 derechoForm"></div>
 
                         <!--  agrego email mmmmmmmmmmmmmmmmmmmm-->
                         <!--  SEGUNDO ROW   EMAIL  mmmmmmmmmmmmmmmmmmmm-->
 
-
                         <div class="row">
-
-                            <div class="col-3 izquierdoForm">
-
-                            </div>
+                            <div class="col-3 izquierdoForm"></div>
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label"></label>
@@ -245,52 +217,35 @@
                                     <!-- <label for="fecha_alta">Fecha de Alta:</label>
                                  <input type="date" name="fecha_alta" required> -->
                                 </div>
-
                             </div>
-
-                            <div class="col-3 derechoForm">
-
-                            </div>
+                            <div class="col-3 derechoForm"></div>
                         </div>
-
 
                         <!-- TERCER row mmmmmmmmmmmmmmmmmmm-->
 
                         <!--  segundo row mmmmmmmmmmmmmmmmmmmm-->
                         <div class="row">
-
-                            <div class="col-3 izquierdoForm">
-
-                            </div>
+                            <div class="col-3 izquierdoForm"></div>
                             <div class="col-6">
                                 <div class="col-75">
                                     <textarea id="subject" name="tema" required placeholder="Sobre que quieres hablar?" style="height:200px"></textarea>
                                 </div>
-
                             </div>
-
-                            <div class="col-3 derechoForm">
-
-                            </div>
+                            <div class="col-3 derechoForm"></div>
                         </div>
 
                         <!-- tercer row pequeño mensaje mmmmmmmmmmmmmmmmmmmm -->
                         <div class="row">
-
                             <div class="col-3 izquierdoForm"> </div>
                             <div class="col-6 pequeño_mensaje">
                                 <p>Recuerda incluir un titulo para tu charla</p>
-
                             </div>
-
                             <div class="col-3 derechoForm"> </div>
                         </div>
 
                         <!-- cuarto row submit mmmmmmmmmmmmmmmmmmmmmmm -->
                         <div class="row">
-                            <div class="col-3 izquierdoForm">
-
-                            </div>
+                            <div class="col-3 izquierdoForm"></div>
                             <div class="col-6">
                                 <input type="submit" value="Enviar">
                             </div>
@@ -303,11 +258,8 @@
                 </form>
                 <!-- </div> -->
 
-
                 <!-- FIN DE FORMULARIOS -->
             </section>
-
-
         </main>
     </div>
     <script src="./carousel.js"></script>
@@ -325,8 +277,8 @@
 
 
 <!-- ESTE ERA EL CODIGO QUE ARIEL SE DEJO COMENTADO PARA TENER A futuro ///
-<!--section class="imagen_grande">
-<!-- <div class="row">
+section class="imagen_grande">
+<div class="row">
                         <div class="col-12 columna_imagen_grande">
 
                             <div class="col-12 fila1"> -->

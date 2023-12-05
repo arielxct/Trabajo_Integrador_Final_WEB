@@ -33,7 +33,7 @@ $result = $conn->query($sql);
 
 </head>
 <header class="header">
-    <div class="container text-center">
+    <!-- <div class="container text-center">
         <div class="row">
             <div class="col-2 columna1">
 
@@ -42,54 +42,57 @@ $result = $conn->query($sql);
             </div>
             <div class="col-1 columna3">
                 <a>Conf Bs As</a>
-            </div>
+            </div> -->
 
-            <!-- Incluimos el nav-bar -->
-            <div class="col-9 columna2">
-                <?php
-                include 'nav-bar.html';
-                ?>
-            </div>
-        </div>
+    <!-- Incluimos el nav-bar -->
+    <!-- <div class="col-9 columna2"> -->
+        <?php
+        include 'nav-bar.html';
+        ?>
+    <!-- </div> -->
+    <!-- </div>
 
-    </div>
+    </div> -->
 
 </header>
 
 <body>
-    <div class="container text-center">
+    <div class="container text-center speakers">
         <main>
             <!-- MMMMMMMM   INSERTO CODIGO HTML PARA VER LA TABLA   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
-            <h2>Registros de la Tabla</h2>
-            <table border="1">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Email</th>
-                    <th>Tema</th>
-                    <th>Fecha de Alta</th>
-                </tr>
+            <h2>Nuestros oradores registrados</h2>
+            <table class="table table-bordered border-primary-subtle">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Tema</th>
+                        <th>Fecha de Alta</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                <?php
-                // Mostrar los registros en la tabla
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<tr>";
-                        echo "<td>" . $row['nombre'] . "</td>";
-                        echo "<td>" . $row['apellido'] . "</td>";
-                        echo "<td>" . $row['mail'] . "</td>";
-                        echo "<td>" . $row['tema'] . "</td>";
-                        echo "<td>" . $row['fecha_alta'] . "</td>";
-                        echo "</tr>";
+                    <?php
+                    // Mostrar los registros en la tabla
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row['nombre'] . "</td>";
+                            echo "<td>" . $row['apellido'] . "</td>";
+                            echo "<td>" . $row['mail'] . "</td>";
+                            echo "<td>" . $row['tema'] . "</td>";
+                            echo "<td>" . $row['fecha_alta'] . "</td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='5'>No hay registros en la tabla</td></tr>";
                     }
-                } else {
-                    echo "<tr><td colspan='5'>No hay registros en la tabla</td></tr>";
-                }
 
-                // Cerrar la conexión
-                $conn->close();
-                ?>
-
+                    // Cerrar la conexión
+                    $conn->close();
+                    ?>
+                </tbody>
             </table>
         </main>
     </div>

@@ -371,9 +371,11 @@ input[type="button"]:hover {
   background-color: #45a049;
 }
 
-.tkt {
+.tkt, .speakers {
   margin-top: 120px;
 }
+
+
 
 /* footer */
 .footer {

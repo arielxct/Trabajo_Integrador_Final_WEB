@@ -378,11 +378,13 @@ input[type="button"]:hover {
   padding: 20px 0px;
   border-radius: 5px;
   margin: 0;
+  text-align: center;
 }
 
 .foo {
   display: flex;
   justify-content:space-evenly;
+
 }
 
 .ft {
@@ -393,14 +395,17 @@ input[type="button"]:hover {
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .footer a:hover {
   background-color: #a7bbd0; 
   color: #1d3947;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
 }
+
 
 /* .btn-light {
   background-color: #1d3947;
@@ -489,6 +494,15 @@ input[type="button"]:hover {
   .btn-light {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .foo {
+    flex-direction: column; /* Cambia a diseño de columna en dispositivos pequeños */
+    align-items: center; /* Centra los elementos en el eje horizontal */
+  }
+
+  .footer a {
+    margin-bottom: 10px; /* Añade espacio entre las etiquetas <a> */
   }
 }
 

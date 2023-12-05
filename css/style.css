@@ -372,18 +372,48 @@ input[type="button"]:hover {
 }
 
 /* footer */
-.btn-light {
+.footer {
+  background-color: #1d3947;
+  color: white;
+  padding: 20px 0px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.foo {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.ft {
+  padding: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  background-color: #a7bbd0; 
+  color: #1d3947;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* .btn-light {
   background-color: #1d3947;
   border-radius: 0;
   border: none;
   color: white;
   font-size: 10px;
   width: 100%;
-}
+} */
 
-.botones_footer {
+/* .botones_footer {
   background-color: #1d3947;
-}
+} */
 
 .menu_grande {
   width: 100%;

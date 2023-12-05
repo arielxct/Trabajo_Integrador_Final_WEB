@@ -22,13 +22,13 @@
 
 /* header */
 .columna1 {
-  background-color: #353a40;
+  /* background-color: #353a40; */
   color: antiquewhite;
   /* font-size: 50px; */
 }
 
 .columna3 {
-  background-color: #353a40;
+  /* background-color: #353a40; */
   color: antiquewhite;
   /* font-size: 50px; */
   display: flex;

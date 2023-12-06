@@ -93,9 +93,9 @@
                     </div>
                 </div>
 
-                <div class="tres_imagenes">
+                <!-- <div class="tres_imagenes">
                     <div class="row alineo_tres_imagenes">
-                        <div class="col-12 tres_fotos">
+                        <div class="col-12 tres_fotos"> -->
 
                             <!-- agrego tres card -->
                             <div class="card-group">
@@ -133,13 +133,24 @@
                                     </div>
                                 </div>
 
+                                <div class="card">
+                                    <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
+                                    <div class="card-body alineo_botes_y_texto">
+                                        <button type="button" class="btn btn-secondary">Negocios</button>
+                                        <button type="button" class="btn btn-danger">Startups</button>
+                                        <h5 class="card-title">Ada Lovelace</h5>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
+                                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                                    </div>
+                                </div>
+
                             </div>
 
                             <!-- fin de las card -->
 
-                        </div>
+                        <!-- </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <!-- SECCION imagen y texto XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
             <section class="imagen_y_texto">

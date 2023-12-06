@@ -1,30 +1,47 @@
 <?php
 
 include 'db_config.php';
-?>
 
-<?php
+// Manejar la eliminación de registros
+if (isset($_GET['accion']) && $_GET['accion'] == 'eliminar') {
+    // Verificar si se proporcionó un ID válido
+    if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+        $idEliminar = $_GET['id'];
 
-// Obtener datos del formulario
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$mail = $_POST['mail'];
-$tema = $_POST['tema'];
- // $fecha_alta = $_POST['fecha_alta']; anulado para incluir NOW() en SQL(****)
-// $fecha_alta = date('d-m-Y');
+        // Preparar la consulta SQL para eliminar el registro
+        $sqlEliminar = "DELETE FROM oradores WHERE id = $idEliminar";
 
-// Preparar la consulta SQL anule esta para probar now() (***)
-//$sql = "INSERT INTO oradores (nombre, apellido, mail, tema, fecha_alta) 
-  //      VALUES ('$nombre', '$apellido', '$mail', '$tema', '$fecha_alta')";
-        
-        $sql = "INSERT INTO oradores (nombre, apellido, mail, tema, fecha_alta) 
-        VALUES ('$nombre', '$apellido', '$mail', '$tema', NOW())";
-
-// Ejecutar la consulta
-if ($conn->query($sql) === TRUE) {
-    echo "Registro ingresado con éxito";
+        // Ejecutar la consulta de eliminación
+        if ($conn->query($sqlEliminar) === TRUE) {
+            // Redirigir a la página oradores.php después de la eliminación
+            header("Location: oradores.php");
+            exit();
+        } else {
+            echo "Error al eliminar el registro: " . $conn->error;
+        }
+    } else {
+        echo "ID no válido para eliminar.";
+    }
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    // Manejar la inserción de nuevos registros
+    // Obtener datos del formulario
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $mail = $_POST['mail'];
+    $tema = $_POST['tema'];
+
+    // Preparar la consulta SQL para la inserción
+    $sqlInsertar = "INSERT INTO oradores (nombre, apellido, mail, tema, fecha_alta) 
+                    VALUES ('$nombre', '$apellido', '$mail', '$tema', NOW())";
+
+    // Ejecutar la consulta de inserción
+    if ($conn->query($sqlInsertar) === TRUE) {
+        // Redirigir a la página oradores.php después de la inserción
+        header("Location: oradores.php");
+        exit();
+    } else {
+        echo "Error al insertar el registro: " . $conn->error;
+    }
 }
 
 // Cerrar la conexión

@@ -84,7 +84,25 @@ $result = $conn->query($sql);
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-danger" onclick="eliminarRegistro()">Eliminar</button>
+                    <!-- Cambiado el ID y agregado el atributo data-id -->
+                    <button type="button" class="btn btn-danger" id="eliminarBtn" data-id="" onclick="eliminarRegistro()">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="eliminacionExitosaModal" tabindex="-1" aria-labelledby="eliminacionExitosaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-warning text-success">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eliminacionExitosaModalLabel">Eliminación Exitosa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Registro eliminado con éxito.</strong>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

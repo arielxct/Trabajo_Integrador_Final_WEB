@@ -2,6 +2,18 @@
 
 include 'db_config.php';
 
+// Función para mostrar el modal de eliminación exitosa
+function mostrarEliminacionExitosa() {
+    echo <<<HTML
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var eliminacionExitosaModal = new bootstrap.Modal(document.getElementById('eliminacionExitosaModal'));
+                eliminacionExitosaModal.show();
+            });
+        </script>
+    HTML;
+}
+
 // Manejar la eliminación de registros
 if (isset($_GET['accion']) && $_GET['accion'] == 'eliminar') {
     // Verificar si se proporcionó un ID válido
@@ -11,10 +23,12 @@ if (isset($_GET['accion']) && $_GET['accion'] == 'eliminar') {
         // Preparar la consulta SQL para eliminar el registro
         $sqlEliminar = "DELETE FROM oradores WHERE id = $idEliminar";
 
-        // Ejecutar la consulta de eliminación
         if ($conn->query($sqlEliminar) === TRUE) {
-            // Redirigir a la página oradores.php después de la eliminación
-            header("Location: oradores.php");
+            // Imprime un script para llamar a la función mostrarEliminacionExitosa
+            mostrarEliminacionExitosa();
+
+            // Redirige a la página oradores.php después de la eliminación
+            header("Location: oradores.php?eliminacion_exitosa=true");
             exit();
         } else {
             echo "Error al eliminar el registro: " . $conn->error;
@@ -46,4 +60,3 @@ if (isset($_GET['accion']) && $_GET['accion'] == 'eliminar') {
 
 // Cerrar la conexión
 $conn->close();
-?>

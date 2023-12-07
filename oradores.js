@@ -103,3 +103,30 @@ document.querySelectorAll('.btn-guardar').forEach(function (btnGuardar) {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Agregamos un event listener para el submit del formulario
+    document.querySelector('form').addEventListener('submit', function (event) {
+        // Validamos los campos antes de enviar el formulario
+        if (!validarCampos()) {
+            // Si la validación falla, mostramos el modal y evitamos enviar el formulario
+            event.preventDefault();
+            var errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+            errorModal.show();
+        }
+    });
+
+    // Función para validar los campos del formulario
+    function validarCampos() {
+        var nombre = document.getElementById('fname').value.trim();
+        var apellido = document.getElementById('lname').value.trim();
+        var mail = document.getElementById('email_oradores').value.trim();
+        var tema = document.getElementById('subject').value.trim();
+
+        // Verificamos si algún campo está vacío
+        if (nombre === '' || apellido === '' || mail === '' || tema === '') {
+            return false;
+        }
+
+        return true;
+    }
+});

@@ -51,6 +51,7 @@ $result = $conn->query($sql);
                     <?php
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
+                            $id = $row['id'];
                             echo "<tr>";
                             echo "<td>" . $row['nombre'] . "</td>";
                             echo "<td>" . $row['apellido'] . "</td>";
@@ -58,8 +59,12 @@ $result = $conn->query($sql);
                             echo "<td>" . $row['tema'] . "</td>";
                             echo "<td>" . $row['fecha_alta'] . "</td>";
 
-                            echo "<td><button type='button' class='btn btn-warning'>Editar</button></td>";
-                            echo "<td><button type='button' class='btn btn-danger' data-id='" . $row['id'] . "' onclick='confirmarEliminar(this)'>Eliminar</button></td>";
+                            // Botón Editar y Guardar
+                            echo "<td>";
+                            echo "<button type='button' class='btn btn-warning btn-editar' data-id='$id'>Editar</button>";
+                            echo "<button type='button' class='btn btn-success btn-guardar guardar-btn' data-id='$id' style='display: none;'>Guardar</button>";
+                            echo "</td>";
+                            echo "<td><button type='button' class='btn btn-danger btn-eliminar' data-id='" . $row['id'] . "' onclick='confirmarEliminar(this)'>Eliminar</button></td>";
                             echo "</tr>";
                         }
                     } else {

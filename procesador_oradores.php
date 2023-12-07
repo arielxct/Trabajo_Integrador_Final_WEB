@@ -19,6 +19,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['accion']) && $_POST['
     } else {
         echo "ID no válido para eliminar.";
     }
+} elseif ($_POST['accion'] == 'editar') {
+    // Verificar si se proporcionó un ID válido
+    if (isset($_POST['id']) && is_numeric($_POST['id'])) {
+        $idEditar = $_POST['id'];
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $mail = $_POST['mail'];
+        $tema = $_POST['tema'];
+
+        // Preparar la consulta SQL para actualizar el registro
+        $sqlEditar = "UPDATE oradores SET nombre='$nombre', apellido='$apellido', mail='$mail', tema='$tema' WHERE id=$idEditar";
+
+        if ($conn->query($sqlEditar) === TRUE) {
+            exit();
+        } else {
+            echo "Error al editar el registro: " . $conn->error;
+        }
+    } else {
+        echo "ID no válido para editar.";
+    }
 } else {
     // Manejar la inserción de nuevos registros
     // Obtener datos del formulario
@@ -43,5 +63,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['accion']) && $_POST['
 
 // Cerrar la conexión
 $conn->close();
-
-?>

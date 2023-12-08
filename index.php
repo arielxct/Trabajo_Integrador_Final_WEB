@@ -199,6 +199,8 @@
                 <!-- <div class="container"> -->
                 <!-- <form action="procesador_oradores.php" method="post"> -->
                 <form action="procesador_oradores.php" method="post">
+
+                <input type="hidden" name="accion" value="crear">
                     <!-- primer row mmmmmmmmmmmmmmmmmmm-->
                     <div class="row">
                         <div class="col-3 izquierdoForm">

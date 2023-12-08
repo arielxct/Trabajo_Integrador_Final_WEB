@@ -439,6 +439,18 @@ input[type="button"]:hover {
       display: none;
     } 
   }*/
+
+  /* Puedes ajustar el tamaño según tus necesidades */
+.guardar-btn, .btn-eliminar {
+  padding: 3px 6px;
+  font-size: 11px;
+}
+
+.btn-editar {
+  padding: 3px 9px;
+  font-size: 11px;
+}
+
 @media (max-width: 600px) {
   .col-25,
   .col-75,

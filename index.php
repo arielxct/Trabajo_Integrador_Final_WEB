@@ -93,53 +93,64 @@
                     </div>
                 </div>
 
-                <div class="tres_imagenes">
+                <!-- <div class="tres_imagenes">
                     <div class="row alineo_tres_imagenes">
-                        <div class="col-12 tres_fotos">
+                        <div class="col-12 tres_fotos"> -->
 
-                            <!-- agrego tres card -->
-                            <div class="card-group">
-                                <!-- card 1 -->
-                                <div class="card">
-                                    <img src="image/steve2.jpg" class="card-img-top" alt="Foto de Steve Jobs">
-                                    <div class="card-body alineo_botes_y_texto">
-                                        <button type="button" class="btn btn-warning">JavaScript</button>
-                                        <button type="button" class="btn btn-info">React</button>
-                                        <h5 class="card-title">Steve Jobs</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusantium facilis sint repudiandae. Doloribus excepturi sed voluptatibus voluptatem, quae hic odit impedit vero, nobis adipisci in inventore aliquid aspernatur sint.</p>
-                                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                                    </div>
-                                </div>
-                                <!-- card 2 -->
-                                <div class="card">
-                                    <img src="image/bill.jpg" class="card-img-top" alt="Foto de Bill Gates">
-                                    <div class="card-body alineo_botes_y_texto">
-                                        <button type="button" class="btn btn-warning">JavaScript</button>
-                                        <button type="button" class="btn btn-info">React</button>
-                                        <h5 class="card-title">Bill Gates</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem iure rem animi voluptates expedita dolorem soluta neque? Facilis, omnis repellat quod assumenda sunt perspiciatis minima vitae doloribus vel dolorum.</p>
-                                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                                    </div>
-                                </div>
-                                <!-- card 3-->
-                                <div class="card">
-                                    <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
-                                    <div class="card-body alineo_botes_y_texto">
-                                        <button type="button" class="btn btn-secondary">Negocios</button>
-                                        <button type="button" class="btn btn-danger">Startups</button>
-                                        <h5 class="card-title">Ada Lovelace</h5>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
-                                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!-- fin de las card -->
-
+                <!-- agrego tres card -->
+                <div class="card-group">
+                    <!-- card 1 -->
+                    <div class="card">
+                        <img src="image/steve2.jpg" class="card-img-top" alt="Foto de Steve Jobs">
+                        <div class="card-body alineo_botes_y_texto">
+                            <button type="button" class="btn btn-warning">JavaScript</button>
+                            <button type="button" class="btn btn-info">React</button>
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusantium facilis sint repudiandae. Doloribus excepturi sed voluptatibus voluptatem, quae hic odit impedit vero, nobis adipisci in inventore aliquid aspernatur sint.</p>
+                            <p class="card-text"><small class="text-body-secondary"></small></p>
                         </div>
                     </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <img src="image/bill.jpg" class="card-img-top" alt="Foto de Bill Gates">
+                        <div class="card-body alineo_botes_y_texto">
+                            <button type="button" class="btn btn-warning">JavaScript</button>
+                            <button type="button" class="btn btn-info">React</button>
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem iure rem animi voluptates expedita dolorem soluta neque? Facilis, omnis repellat quod assumenda sunt perspiciatis minima vitae doloribus vel dolorum.</p>
+                            <p class="card-text"><small class="text-body-secondary"></small></p>
+                        </div>
+                    </div>
+                    <!-- card 3-->
+                    <div class="card">
+                        <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
+                        <div class="card-body alineo_botes_y_texto">
+                            <button type="button" class="btn btn-secondary">Negocios</button>
+                            <button type="button" class="btn btn-danger">Startups</button>
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
+                            <p class="card-text"><small class="text-body-secondary"></small></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
+                        <div class="card-body alineo_botes_y_texto">
+                            <button type="button" class="btn btn-secondary">Negocios</button>
+                            <button type="button" class="btn btn-danger">Startups</button>
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
+                            <p class="card-text"><small class="text-body-secondary"></small></p>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- fin de las card -->
+
+                <!-- </div>
+                    </div>
+                </div> -->
             </section>
             <!-- SECCION imagen y texto XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
             <section class="imagen_y_texto">
@@ -258,11 +269,30 @@
                 </form>
                 <!-- </div> -->
 
+                <!-- Agregamos el modal de Bootstrap para mostrar el mensaje de error -->
+                <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="errorModalLabel">Error de Validación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Por favor, complete todos los campos obligatorios.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- FIN DE FORMULARIOS -->
             </section>
         </main>
     </div>
     <script src="./carousel.js"></script>
+    <script src="./oradores.js"></script>
 </body>
 
 <!-- Incluimos el footer -->

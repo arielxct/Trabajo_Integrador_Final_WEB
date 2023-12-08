@@ -96,55 +96,56 @@
                 <!-- <div class="tres_imagenes">
                     <div class="row alineo_tres_imagenes">
                         <div class="col-12 tres_fotos"> -->
+                <section>
+                    <!-- agrego tres card -->
+                    <div class="card-group">
+                        <!-- card 1 -->
+                        <div class="speaker-card card-margin-small col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <img src="image/steve2.jpg" class="card-img-top" alt="Foto de Steve Jobs">
+                            <div class="card-body alineo_botes_y_texto">
+                                <button type="button" class="btn btn-warning">JavaScript</button>
+                                <button type="button" class="btn btn-info">React</button>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusantium facilis sint repudiandae. Doloribus excepturi sed voluptatibus voluptatem, quae hic odit impedit vero, nobis adipisci in inventore aliquid aspernatur sint.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="speaker-card card-margin-small col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <img src="image/bill.jpg" class="card-img-top" alt="Foto de Bill Gates">
+                            <div class="card-body alineo_botes_y_texto">
+                                <button type="button" class="btn btn-warning">JavaScript</button>
+                                <button type="button" class="btn btn-info">React</button>
+                                <h5 class="card-title">Bill Gates</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem iure rem animi voluptates expedita dolorem soluta neque? Facilis, omnis repellat quod assumenda sunt perspiciatis minima vitae doloribus vel dolorum.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </div>
+                        </div>
+                        <!-- card 3-->
+                        <div class="speaker-card card-margin-small col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
+                            <div class="card-body alineo_botes_y_texto">
+                                <button type="button" class="btn btn-secondary">Negocios</button>
+                                <button type="button" class="btn btn-danger">Startups</button>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </div>
+                        </div>
 
-                <!-- agrego tres card -->
-                <div class="card-group">
-                    <!-- card 1 -->
-                    <div class="card">
-                        <img src="image/steve2.jpg" class="card-img-top" alt="Foto de Steve Jobs">
-                        <div class="card-body alineo_botes_y_texto">
-                            <button type="button" class="btn btn-warning">JavaScript</button>
-                            <button type="button" class="btn btn-info">React</button>
-                            <h5 class="card-title">Steve Jobs</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusantium facilis sint repudiandae. Doloribus excepturi sed voluptatibus voluptatem, quae hic odit impedit vero, nobis adipisci in inventore aliquid aspernatur sint.</p>
-                            <p class="card-text"><small class="text-body-secondary"></small></p>
+                        <div class="speaker-card card-margin-small col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <img src="image/bill.jpg" class="card-img-top" alt="Foto de Ada Lovelace">
+                            <div class="card-body alineo_botes_y_texto">
+                                <button type="button" class="btn btn-secondary">Negocios</button>
+                                <button type="button" class="btn btn-danger">Startups</button>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </div>
                         </div>
                     </div>
-                    <!-- card 2 -->
-                    <div class="card">
-                        <img src="image/bill.jpg" class="card-img-top" alt="Foto de Bill Gates">
-                        <div class="card-body alineo_botes_y_texto">
-                            <button type="button" class="btn btn-warning">JavaScript</button>
-                            <button type="button" class="btn btn-info">React</button>
-                            <h5 class="card-title">Bill Gates</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem iure rem animi voluptates expedita dolorem soluta neque? Facilis, omnis repellat quod assumenda sunt perspiciatis minima vitae doloribus vel dolorum.</p>
-                            <p class="card-text"><small class="text-body-secondary"></small></p>
-                        </div>
-                    </div>
-                    <!-- card 3-->
-                    <div class="card">
-                        <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
-                        <div class="card-body alineo_botes_y_texto">
-                            <button type="button" class="btn btn-secondary">Negocios</button>
-                            <button type="button" class="btn btn-danger">Startups</button>
-                            <h5 class="card-title">Ada Lovelace</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
-                            <p class="card-text"><small class="text-body-secondary"></small></p>
-                        </div>
-                    </div>
+                </section>
 
-                    <div class="card">
-                        <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
-                        <div class="card-body alineo_botes_y_texto">
-                            <button type="button" class="btn btn-secondary">Negocios</button>
-                            <button type="button" class="btn btn-danger">Startups</button>
-                            <h5 class="card-title">Ada Lovelace</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
-                            <p class="card-text"><small class="text-body-secondary"></small></p>
-                        </div>
-                    </div>
-
-                </div>
 
                 <!-- fin de las card -->
 
@@ -163,7 +164,7 @@
                                 <div class="col-md-6">
                                     <img src="image/honolulu.jpg" class="img-fluid rounded-start" alt="...">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="octubre col-md-6">
                                     <div class="card-body alineo_texto_octubre">
                                         <section id="lugar_fecha">
                                             <h5 class="card-title">Bs As - Octubre</h5>

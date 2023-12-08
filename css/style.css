@@ -155,8 +155,26 @@
   padding-left: 20px;
 }
 
-.card {
+.card-group img {
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: fill;
+}
+
+.card-margin-small {
+  margin-bottom: 1rem;
+}
+
+/* .card {
   padding: 20px;
+  border: 1px solid #353a40 !important;
+} */
+
+.speaker-card {
+  border: 1px solid #ccc;
+  padding: 5px;
+  /* margin-left: 5px; */
 }
 
 .alineo_botes_y_texto {
@@ -248,10 +266,10 @@
   border: 0px;
 }
 
-.col-md-6 {
+/* .col-md-6 {
   background-color: #353a40;
   color: white;
-}
+} */
 
 .texto_octubre {
   background-color: white;
@@ -260,6 +278,10 @@
 
 .alineo_texto_octubre {
   text-align: left;
+}
+
+.octubre {
+  background-color:#a7bbd0;
 }
 
 .btn-lightmio {

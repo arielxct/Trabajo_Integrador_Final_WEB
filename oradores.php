@@ -1,125 +1,124 @@
-<!--  INSERTO CONEXION PHP A SERVIDOR WEBHOST -->
-<?php
-include 'db_config.php';
-?>
+<!-- Para mostrar una tabla de una base de datos utilizando Bootstrap en HTML y PHP, primero asegúrate de tener una conexión a la base de datos. Aquí tienes un ejemplo básico:
+
+1. *Conexión a la base de datos (db_connect.php):* -->
 
 <?php
-// Consulta para obtener todos los registros de la tabla 
+
+$servername = "localhost";
+$username = "id21315121_arielct";
+$password = "codeFullPhp#23";
+$dbname = "id21315121_integrador_php";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("La conexión a la base de datos falló: " . $conn->connect_error);
+}
+// ****************************************************
+//************************************ ***
+
+// Obtener datos de la tabla
 $sql = "SELECT * FROM oradores";
 $result = $conn->query($sql);
+
+
 ?>
 
-<!--  FIN DE PHP CONEXION A SERVIDOR WEBHOST -->
+
+<!-- 2. *Consulta y visualización de datos (index.php):*
+php -->
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTEGRADOR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Integrador, FullStack PHP! Tickets</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <title>Tabla de Base de Datos</title>
 
-<header class="header">
+    
+</head>
+<header>
     <?php
-    include 'nav-bar.html';
+    include 'nav-bar.php';
     ?>
 </header>
-
 <body>
-    <div class="container text-center speakers">
-        <main>
-            <h2>Nuestros oradores registrados</h2>
-            <table class="table table-bordered border-primary-subtle">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Email</th>
-                        <th>Tema</th>
-                        <th>Fecha de Alta</th>
-                        <th colspan="2">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
+<div> * </div>
+    <div> * </div>
+    <div> * </div>
+    <div> * </div>
+    <div> * </div>
+    <div> * </div>
+    <div> * </div>
+    <div> * </div>
+    <div> * </div>
 
-                    <?php
-                    if ($result->num_rows > 0) {
-                        while ($row = $result->fetch_assoc()) {
-                            $id = $row['id'];
-                            echo "<tr>";
-                            echo "<td>" . $row['nombre'] . "</td>";
-                            echo "<td>" . $row['apellido'] . "</td>";
-                            echo "<td>" . $row['mail'] . "</td>";
-                            echo "<td>" . $row['tema'] . "</td>";
-                            echo "<td>" . $row['fecha_alta'] . "</td>";
 
-                            // Botón Editar y Guardar
-                            echo "<td>";
-                            echo "<button type='button' class='btn btn-warning btn-editar' data-id='$id'>Editar</button>";
-                            echo "<button type='button' class='btn btn-success btn-guardar guardar-btn' data-id='$id' style='display: none;'>Guardar</button>";
-                            echo "</td>";
-                            echo "<td><button type='button' class='btn btn-danger btn-eliminar' data-id='" . $row['id'] . "' onclick='confirmarEliminar(this)'>Eliminar</button></td>";
-                            echo "</tr>";
-                        }
-                    } else {
-                        echo "<tr><td colspan='5'>No hay registros en la tabla</td></tr>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-        </main>
-    </div>
+<div class="container mt-5">
+    <h2>Tabla de Oradores</h2>
+    <table class="table">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Tema</th>
+            <th>Fecha de Alta</th>
+            <th>Acciones</th>
 
-    <!-- Modal de Confirmación de Eliminación -->
-    <div class="modal" id="confirmarEliminarModal" tabindex="-1" aria-labelledby="confirmarEliminarModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirmarEliminarModalLabel">Confirmar Eliminación</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Estás seguro de que deseas eliminar este registro?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <!-- Cambiado el ID y agregado el atributo data-id -->
-                    <button type="button" class="btn btn-danger" id="eliminarBtn" data-id="" onclick="eliminarRegistro()">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal" id="eliminacionExitosaModal" tabindex="-1" aria-labelledby="eliminacionExitosaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-warning text-success">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="eliminacionExitosaModalLabel">Eliminación Exitosa</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <strong>Registro eliminado con éxito.</strong>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onClick="cerrarModal()">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+    // Mostrar los registros en la tabla
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row['id_oradores'] . "</td>";
+            echo "<td>" . $row['nombre'] . "</td>";
+            echo "<td>" . $row['apellido'] . "</td>";
+            echo "<td>" . $row['mail'] . "</td>";
+            echo "<td>" . $row['tema'] . "</td>";
+            echo "<td>" . $row['fecha_alta'] . "</td>";
+            echo "<td>
+                    <a href='editar.php?id_oradores=" . $row['id_oradores'] . "'>Editar</a>
+                    <a href='borrar.php?id_oradores=" . $row['id_oradores'] . "'>Borrar</a>
+                  </td>";
+            echo "</tr>";
+        }
+    } else {
+        echo "<tr><td colspan='7'>No hay registros en la tabla</td></tr>";
+    }
 
-    <script src="oradores.js"></script>
+    // Cerrar la conexión
+    $conn->close();
+    ?>
+
+
+
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 <footer>
     <?php
-    include 'footer.html';
+    include 'footer.php';
     ?>
 </footer>
 
+
 </html>
+
+

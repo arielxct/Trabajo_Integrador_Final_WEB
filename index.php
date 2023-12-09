@@ -28,7 +28,7 @@
     <!-- Incluimos el nav-bar -->
     <!-- <div class="col-9 columna2"> -->
     <?php
-    include 'nav-bar.html';
+    include 'nav-bar.php';
     ?>
     <!-- </div> -->
     <!-- </div> -->
@@ -198,7 +198,7 @@
                 <!-- FORMULARIO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
                 <!-- <div class="container"> -->
                 <!-- <form action="procesador_oradores.php" method="post"> -->
-                <form action="procesador_oradores.php" method="post">
+                <form action="procesador_oradores.php" method="post" onsubmit="return validarFormulario()">
 
                 <input type="hidden" name="accion" value="crear">
                     <!-- primer row mmmmmmmmmmmmmmmmmmm-->
@@ -296,12 +296,37 @@
     </div>
     <script src="./carousel.js"></script>
     <script src="./oradores.js"></script>
+
+
+     <!-- valida el formulario MMMMMMMMMMMMMMMMMMMMMMMM -->
+    <script>
+    function validarFormulario() {
+    // Validar campos aquí
+    var nombre = document.getElementById('fname').value;
+    var apellido = document.getElementById('lname').value;
+    var email = document.getElementById('email_oradores').value;
+
+    // Ejemplo de validación básica (puedes personalizar según tus necesidades)
+    if (nombre.trim() === '' || apellido.trim() === '' || email.trim() === '') {
+        alert('Todos los campos son obligatorios');
+        return false; // Evita que el formulario se envíe
+    }
+
+    // Puedes agregar más validaciones según tus necesidades
+
+    return true; // Permite que el formulario se envíe
+}
+</script>
+
+
+
+
 </body>
 
 <!-- Incluimos el footer -->
 <footer>
     <?php
-    include 'footer.html';
+    include 'footer.php';
     ?>
 </footer>
 

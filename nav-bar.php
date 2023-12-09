@@ -42,13 +42,13 @@
                         <a class="nav-link active" aria-current="page" href="./index.php">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#oradores">Los oradores</a>
+                        <a class="nav-link" href="./index.php#oradores">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#lugar_fecha">El lugar y la fecha</a>
+                        <a class="nav-link" href="./index.php#lugar_fecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#conviertete_orador">Conviertete en orador</a>
+                        <a class="nav-link" href="./index.php#conviertete_orador">Conviertete en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link tickets" href="tickets.html">Comprar tickets</a>

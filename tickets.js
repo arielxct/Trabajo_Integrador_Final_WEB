@@ -40,17 +40,19 @@ function calculaMonto() {
                             
 
                             }else{
+                                if(categoriaComprador == "junior"){
                                 monto= cantidadTickets*valorTickets*0.85  
                                 
+                            }else{
+                                monto = cantidadTickets*valorTickets*1
                             }
 
 
-                            
+                            }
             }
-            montoCompraTickets = "Total a Pagar:$ " + monto;
+            montoCompraTickets = "Total a Pagar: $" + monto;
             console.log(montoCompraTickets);
             
-            document.getElementById('resultadoMontoCompraTickets').innerHTML = montoCompraTickets;
             document.getElementById('totalMontoCompraTickets').innerHTML = montoCompraTickets;
     } 
 } 

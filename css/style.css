@@ -59,6 +59,12 @@
 
 /* body */
 /* imagen grande */
+.imagen_grande img{
+  filter: brightness(0.7);
+}
+.carousel-control-prev, .carousel-control-next{
+  width: 8%;
+}
 .columna_imagen_grande {
   /* background-image: url('/Integrador/image/ba11260x697.png'); */
 
@@ -83,6 +89,8 @@
   width: 100%;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: end;
 }
 
 .fila1 {
@@ -103,7 +111,6 @@
   height: 250px;
   /* background-color: rgb(219, 110, 37); */
 }
-
 .titulo_tarjeta {
   font-size: 25px;
 
@@ -153,8 +160,9 @@
 .card-group {
   padding-left: 20px;
   padding-left: 20px;
+  display: flex;
+  justify-content: center;
 }
-
 .card-group img {
   object-fit: cover;
   max-width: 400px;

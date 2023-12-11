@@ -46,7 +46,7 @@
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./image/ba11290x780barro.png" class="d-block w-100" alt="...">
+                            <img src="./image/hawaii.jpg" class="d-block w-100" alt="...">
                             <div class="contenido_fijo">
                                 <!-- Contenido de texto plano y botones aquí -->
                                 <div class="col-6 fila2a"></div>
@@ -124,17 +124,6 @@
                         <!-- card 3-->
                         <div class="speaker-card card-margin-small col-lg-3 col-md-6 col-sm-12 mb-4">
                             <img src="image/ada.jpeg" class="card-img-top" alt="Foto de Ada Lovelace">
-                            <div class="card-body alineo_botes_y_texto">
-                                <button type="button" class="btn btn-secondary">Negocios</button>
-                                <button type="button" class="btn btn-danger">Startups</button>
-                                <h5 class="card-title">Ada Lovelace</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, similique repudiandae. Eius magni tenetur commodi beatae id eveniet harum rerum itaque accusamus necessitatibus culpa ipsum officiis, est repudiandae quasi sit.</p>
-                                <p class="card-text"><small class="text-body-secondary"></small></p>
-                            </div>
-                        </div>
-
-                        <div class="speaker-card card-margin-small col-lg-3 col-md-6 col-sm-12 mb-4">
-                            <img src="image/bill.jpg" class="card-img-top" alt="Foto de Ada Lovelace">
                             <div class="card-body alineo_botes_y_texto">
                                 <button type="button" class="btn btn-secondary">Negocios</button>
                                 <button type="button" class="btn btn-danger">Startups</button>

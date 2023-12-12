@@ -295,13 +295,13 @@
     var apellido = document.getElementById('lname').value;
     var email = document.getElementById('email_oradores').value;
 
-    // Ejemplo de validación básica (puedes personalizar según tus necesidades)
+    // Valido datos
     if (nombre.trim() === '' || apellido.trim() === '' || email.trim() === '') {
         alert('Todos los campos son obligatorios');
         return false; // Evita que el formulario se envíe
     }
 
-    // Puedes agregar más validaciones según tus necesidades
+   
 
     return true; // Permite que el formulario se envíe
 }
@@ -323,58 +323,3 @@
 
 
 
-<!-- ESTE ERA EL CODIGO QUE ARIEL SE DEJO COMENTADO PARA TENER A futuro ///
-section class="imagen_grande">
-<div class="row">
-                        <div class="col-12 columna_imagen_grande">
-
-                            <div class="col-12 fila1"> -->
-<!-- incluyo imagen grande -->
-<!-- <img src="image/ba11260x697barro.png" class="card-img-top" alt="Foto de Obras Sanitarias"> -->
-<!-- <img src="image/ba11260x697barro.png" class="card-img-top" alt="Foto de Obras Sanitarias"> -->
-<!-- sin datos -->
-
-<!-- AGREGO CARRUSEL DE REPRODUCCION AUTOMATICA -->
-<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="image/ba1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="image/ba2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="image/ba3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div> -->
-<!-- FIN DE CARROUSEL -->
-<!-- 
-                            </div>
-                            <div class="row">
-                                <div class="col-6 fila2a">
-
-                                </div>
-                                <div class="col-5 fila2b">
-                                    <div class="titulo_tarjeta">
-                                        <a>Conf Bs As</a>
-                                    </div>
-                                    <p class="parrafo_tarjeta">
-                                        Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tnemos para ti. Te esperamos!
-                                    </p>
-                                    <div class="botones_tarjeta">
-
-                                        <a href="#conviertete_orador">
-                                            <button type="button" class="btn btn-outline-secondary"> Quiero ser orador</button>
-                                        </a>
-
-                                        <a href="tickets.html">
-                                            <button type="button" class="btn btn-success">Comprar tickets</button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1 fila2c"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->

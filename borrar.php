@@ -1,9 +1,4 @@
 <?php
-// Establecer la conexión a la base de datos (asegúrate de reemplazar los valores con los tuyos)
-// $servername = "tu_servidor";
-// $username = "tu_usuario";
-// $password = "tu_contraseña";
-// $database = "tu_base_de_datos";
 
 // $servername = "localhost";
 // $username = "root";
@@ -39,7 +34,7 @@ if (isset($_GET['id_oradores']) && is_numeric($_GET['id_oradores'])) {
         $mail = $row['mail'];
         $tema = $row['tema'];
        // echo "Registro  encontrado";
-        // Puedes agregar más campos según tu tabla
+        
     } else {
         echo "Registro no encontrado";
         exit;
@@ -54,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Eliminar el registro de la base de datos
     $sql_delete = "DELETE FROM oradores WHERE `id_oradores` = $id";
 
-    // $sql_delete = "DELETE FROM oradores WHERE `oradores`.`id_oradores` = 31";
+    
    
     if ($conn->query($sql_delete) === TRUE) {
         echo "Registro eliminado correctamente";

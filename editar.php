@@ -1,10 +1,4 @@
 <?php
-// Establecer la conexión a la base de datos (asegúrate de reemplazar los valores con los tuyos)
-// $servername = "tu_servidor";
-// $username = "tu_usuario";
-// $password = "tu_contraseña";
-// $database = "tu_base_de_datos";
-
 
 // $servername = "localhost";
 // $username = "root";

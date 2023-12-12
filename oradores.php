@@ -1,6 +1,6 @@
-<!-- Para mostrar una tabla de una base de datos utilizando Bootstrap en HTML y PHP, primero asegúrate de tener una conexión a la base de datos. Aquí tienes un ejemplo básico:
 
-1. *Conexión a la base de datos (db_connect.php):* -->
+
+<!-- 1. *Conexión a la base de datos (db_connect.php):*  -->
 
 <?php
 
@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("La conexión a la base de datos falló: " . $conn->connect_error);
 }
 // ****************************************************
-//************************************ ***
+
 
 // Obtener datos de la tabla
 $sql = "SELECT * FROM oradores";

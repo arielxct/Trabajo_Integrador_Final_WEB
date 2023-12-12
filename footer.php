@@ -1,19 +1,4 @@
-<!-- <div class="container text-center">
-        <!-- <div class="container text-center">
-    <h2>footer</h2>footer
-</div> -->
-<!-- <div class="row footer">
-            <div class="botones_footer">
-                <button type="button" class="btn btn-light">Preguntas frecuentes</button>
-                <button type="button" class="btn btn-light">Contáctanos</button>
-                <button type="button" class="btn btn-light">Prensa</button>
-                <button type="button" class="btn btn-light">Conferencias</button>
-                <button type="button" class="btn btn-light">Terminos y condiciones</button>
-                <button type="button" class="btn btn-light">Privacidad</button>
-                <button type="button" class="btn btn-light">Estudiantes</button>
-            </div>
-        </div> -->
-<!-- </div>  -->
+
 
 <!-- footer.html -->
 
